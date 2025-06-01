@@ -1,0 +1,49 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sticky Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 100;
+  padding: 5px 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Small Top-Left Logo */
+.logo img {
+  height: 90px; /* Adjust this value to change logo size */
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Pushes nav to right */
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Prevent content from hiding behind header */
+body {
+  padding-top: 50px;
+}
