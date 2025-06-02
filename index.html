@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donweb</title>
+    <title>Tuffgong JR | DJ & Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home">
+          <img src="assets/logo.jpeg" alt="Tuffgong JR Logo" class="logo-img">
+        </a>
+      </div>
 
-<header class="site-header">
-  <div class="container">
-    <!-- Logo Image -->
-    <div class="logo">
-      <a href="#home">
-        <img src="assets/logo.jpeg" alt="Tuffgong JR Logo" class="logo-img">
-      </a>
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#dj">DJ</a></li>
+          <li><a href="#software">Projects</a></li>
+          <li><a href="#merch">Merch</a></li> <!-- Replaced Contact with Merch -->
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-
-    <!-- Navigation Menu -->
-    <nav class="nav-menu" id="navMenu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#dj">DJ</a></li>
-        <li><a href="#software">Projects</a></li>
-        <li><a href="#Merch">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Menu Toggle -->
-    <div class="menu-toggle" id="menuToggle">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</header>
+  </header>
 
   <main>
-  <section id="home" class="hero" style="background-image: url('assets/hero.jpeg')">
-    <div class="hero-overlay"></div>
-<div class="hero-content">
-  <h1 class="hero-title">
-    <span class="word">Code</span> <span class="word">by</span> <span class="word">Day.</span><br>
-    <span class="word">Beats</span> <span class="word">by</span> <span class="word">Night.</span>
-  </h1>
-  <p class="hero-text">
-    I’m <strong>Tuffgong JR</strong> — DJ & software engineer. I fuse sound and software to create experiences that move people — on the dancefloor and in the digital world.
-  </p>
-  <div class="hero-buttons">
-    <a href="#dj" class="btn-primary">🎧 Book Me to DJ</a>
-    <a href="#software" class="btn-secondary">💻 See My Code</a>
-  </div>
-</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('assets/hero.jpeg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="word">Code</span> <span class="word">by</span> <span class="word">Day.</span><br>
+          <span class="word">Beats</span> <span class="word">by</span> <span class="word">Night.</span>
+        </h1>
+        <p class="hero-text">
+          I’m <strong>Tuffgong JR</strong> — DJ & software engineer. I fuse sound and software to create experiences that move people.
+        </p>
+        <div class="hero-buttons">
+          <a href="#dj" class="btn-primary">🎧 Book Me to DJ</a>
+          <a href="#software" class="btn-secondary">💻 See My Code</a>
+        </div>
+      </div>
+    </section>
 
-    </div>
-  </section>
-</main>
+    <!-- Merch Section -->
+    <section id="merch" class="merch-section">
+      <h2 class="section-title">🔥 Exclusive Merch</h2>
+      <p class="section-subtitle">Wear the Vibe, Code the Beat</p>
+      
+      <div class="merch-grid">
+        <!-- Shirt -->
+        <a href="https://your-store.com/products/dj-code-tee" target="_blank" rel="noopener noreferrer" class="merch-card">
+          <img src="assets/Tshirts.jpeg" alt="DJ Code Tee" class="merch-img">
+          <h3>DJ Code Tee</h3>
+          <p class="price">$29.99</p>
+        </a>
 
- 
-  
+        <!-- sweatshirt -->
+        <a href="https://your-store.com/products/nightshift-sweatshirt" target="_blank" rel="noopener noreferrer" class="merch-card">
+          <img src="assets/ Sweatshirt .jpeg" alt="Nightshift Sweatshirt" class="merch-img">
+          <h3>Nightshift Hoodie</h3>
+          <p class="price">$49.99</p>
+        </a>
 
-    <!-- Link JavaScript later -->
-    <script src="script.js"></script>
+        <!-- Cap -->
+        <a href="https://your-store.com/products/neon-cap" target="_blank" rel="noopener noreferrer" class="merch-card">
+          <img src="assets/cap.jpeg" alt="Neon Cap" class="merch-img">
+          <h3>Neon Cap</h3>
+          <p class="price">$24.99</p>
+        </a>
+      </div>
+
+      <!-- "View All" Button -->
+      <a href="https://your-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary merch-store-link">
+        🛍️ Visit Full Store
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
