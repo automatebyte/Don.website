@@ -6,40 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donweb</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
- <header>
-    <nav>
-      <div class="header-content">
-        <a href="#" class="logo">
-          <img src="assets 1/logo.jpeg" alt="Mix Logo">
-        </a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">DJ Bookings</a></li>
-          <li><a href="#">Software</a></li>
-          <li><a href="#">Merch</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+<header class="site-header">
+  <div class="container">
+    <!-- Logo Image -->
+    <div class="logo">
+      <a href="#home">
+        <img src="assets/logo.jpeg" alt="Tuffgong JR Logo" class="logo-img">
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#dj">DJ</a></li>
+        <li><a href="#software">Projects</a></li>
+        <li><a href="#Merch">Contact</a></li>
+      </ul>
     </nav>
-  </header>
 
-    <!-- Main Content Wrapper -->
-    <main>
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
 
-        <!-- Home Section -->
-        <section id="home">
-            <h2>Mixing Music & Technology for Unforgettable Experiences</h2>
-            <p>Welcome! I’m Tuffgong JR, a dedicated DJ and software engineer with a passion for delivering exceptional
-                experiences through music and technology. Whether you’re planning an unforgettable event or seeking
-                innovative software solutions, I bring creativity, professionalism, and precision to every project.
-                Explore my portfolio, browse exclusive merchandise, and get in touch for bookings or collaborations.</p>
-        </section>
+  <main>
+  <section id="home" class="hero" style="background-image: url('assets/hero.jpeg')">
+    <div class="hero-overlay"></div>
+<div class="hero-content">
+  <h1 class="hero-title">
+    <span class="word">Code</span> <span class="word">by</span> <span class="word">Day.</span><br>
+    <span class="word">Beats</span> <span class="word">by</span> <span class="word">Night.</span>
+  </h1>
+  <p class="hero-text">
+    I’m <strong>Tuffgong JR</strong> — DJ & software engineer. I fuse sound and software to create experiences that move people — on the dancefloor and in the digital world.
+  </p>
+  <div class="hero-buttons">
+    <a href="#dj" class="btn-primary">🎧 Book Me to DJ</a>
+    <a href="#software" class="btn-secondary">💻 See My Code</a>
+  </div>
+</div>
 
-    </main>
+    </div>
+  </section>
+</main>
+
+ 
+  
 
     <!-- Link JavaScript later -->
     <script src="script.js"></script>
