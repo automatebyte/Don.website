@@ -806,3 +806,110 @@ body {
 .dropdown-content a:hover {
   color: #1db954; /* Customize hover color */
 }
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #ddd;
+}
+
+.tab-btn.active {
+  background-color: #333;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.show {
+  display: block;
+}
+
+.tab-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #222;
+}
+
+
+
+/* Booking form container */
+#booking form {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fefefe; /* light background */
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: inherit; /* inherit your site font */
+}
+
+/* Inputs, textarea, select */
+#booking input,
+#booking textarea,
+#booking select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+#booking input:focus,
+#booking textarea:focus,
+#booking select:focus {
+  border-color: #007bff; /* primary highlight color */
+  outline: none;
+}
+
+/* Textarea styling */
+#booking textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Submit button */
+#booking button[type="submit"] {
+  width: 100%;
+  background-color: #007bff; /* primary button color */
+  color: white;
+  border: none;
+  padding: 14px 0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#booking button[type="submit"]:hover {
+  background-color: #0056b3; /* darker hover shade */
+}
+
+/* Booking response message */
+#booking-response {
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+
+

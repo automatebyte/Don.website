@@ -18,16 +18,18 @@
         </a>
       </div>
 
-     <nav class="nav-menu" id="navMenu">
+<nav class="nav-menu">
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>  <!-- New -->
-    <li><a href="#dj">DJ</a></li>
-    <li><a href="#software">Projects</a></li>
-    <li><a href="#merch">Merch</a></li>
-    <li><a href="#about">About</a></li>  <!-- New -->
+    <li><a href="#" class="tab-link active" data-tab="home">Home</a></li>
+    <a href="#" class="tab-link" data-tab="about">About</a>
+    <li><a href="#" class="tab-link" data-tab="projects">Projects</a></li>
+    <li><a href="#" class="tab-link" data-tab="dj">DJ Sets</a></li>
+    <li><a href="#" class="tab-link" data-tab="booking">Book Me</a></li>
+    <a href="#" class="tab-link" data-tab="Merch">Merch</a>
+
   </ul>
 </nav>
+
 
       <!-- Mobile Menu Toggle -->
       <div class="menu-toggle" id="menuToggle">
@@ -54,7 +56,6 @@
         </div>
       </div>
     </section>
-
     <!-- Merch Section -->
     <section id="merch" class="merch-section">
       <h2 class="section-title">🔥 Exclusive Merch</h2>
@@ -125,6 +126,19 @@
       </button>
     </div>
   </div>
+<div id="booking" class="tab-content">
+  <h2>Book Me</h2>
+  <form id="booking-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="text" id="event" placeholder="Event Type" required>
+    <input type="date" id="date" required>
+    <textarea id="message" placeholder="Additional Info..."></textarea>
+    <button type="submit">Submit</button>
+    <p id="booking-response"></p>
+  </form>
+</div>
+
 </section>
 <!-- Projects Section -->
 <section id="software" class="projects-section">
