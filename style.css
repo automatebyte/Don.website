@@ -383,3 +383,57 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== DJ Sets Section ===== */
+.dj-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #1a1a3a, #0a0a1a);
+  text-align: center;
+}
+
+.sets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.set-card {
+  background: rgba(30, 30, 60, 0.6);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168, 216, 255, 0.1);
+}
+
+.set-cover {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  filter: grayscale(20%);
+}
+
+.play-button {
+  background: rgba(116, 242, 206, 0.2);
+  color: #a8d8ff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: 1rem;
+  border: 1px solid #74f2ce;
+  cursor: not-allowed;
+}
+
+.play-button.disabled:hover {
+  background: rgba(116, 242, 206, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sets-grid {
+    grid-template-columns: 1fr;
+  }
+}
