@@ -673,3 +673,136 @@ body {
     padding: 0 1rem;
   }
 }
+.footer {
+  background-image: url('assets/footer.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 1;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.footer-section h3 {
+  color: #facc15;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.footer-section a {
+  color: #facc15;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.icons a {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #facc15;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.qr-code .qr-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+.qr-code img {
+  width: 200px;
+  max-width: 90%;
+  border-radius: 12px;
+  border: 3px solid #facc15;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #facc15;
+}
+/* Dropdown toggle style */
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hidden by default */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Show when toggled */
+.dropdown-content.active {
+  display: flex;
+}
+
+/* Icon + text styles */
+.dropdown-content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  color: #1db954; /* Customize hover color */
+}

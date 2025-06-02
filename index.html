@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuffgong JR | DJ & Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -218,7 +219,55 @@
     </p>
   </div>
 </section>
+<footer class="footer">
+  <div class="footer-content">
+    
+    <!-- Contact -->
+    <div class="footer-section">
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:kipkogeidennis05@gmail.com">kipkogeidennis05@gmail.com</a></p>
+  <p>Phone: <a href="tel:+254712345678">+254 738624161</a></p>
+  <p>Location: Nairobi, Kenya</p>
+  <p>Available: Mon–Fri, 9am–5pm EAT</p>
+</div>
 
+    <!-- Social Media -->
+   <!-- Social Media Dropdown -->
+<div class="footer-section social-icons">
+  <h3 class="dropdown-toggle">Follow Me <i class="fas fa-caret-down"></i></h3>
+  <div class="icons dropdown-content">
+    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+  </div>
+</div>
+
+
+    <!-- WhatsApp QR -->
+    <div class="footer-section qr-code">
+      <h3>WhatsApp</h3>
+      <p class="qr-text">Let’s chat on WhatsApp! Just scan and say hi 👋</p>
+      <img src="assets/whatsapp qr.jpeg" alt="WhatsApp QR">
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> <i class="fas fa-bolt"></i> FUSE | Designed by Kipkogei Dennis</p>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Year Script -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
   <script src="script.js"></script>
 </body>
